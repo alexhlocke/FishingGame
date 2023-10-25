@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "com.unity.feature.2d": "2.0.0",
+    "com.unity.ide.vscode": "1.2.5",
+    "com.unity.inputsystem": "1.6.3",
     "com.unity.ide.rider": "3.0.26",
     "com.unity.render-pipelines.universal": "14.0.9",
     "com.unity.shadergraph": "14.0.9",
