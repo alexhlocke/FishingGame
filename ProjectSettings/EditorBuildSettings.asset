@@ -4,8 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 0
-    path: Assets/UnderwaterFantasy/Scenes/demo.unity
-    guid: 4c39057d64ab94044934cc9f140d08f9
+  m_Scenes: []
   m_configObjects: {}
