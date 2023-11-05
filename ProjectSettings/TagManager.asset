@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - clouds
+  - 
   - 
   - 
   - 
@@ -38,6 +38,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Soil
+    uniqueID: 245938109
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 3841884755
+    locked: 0
+  - name: UI
+    uniqueID: 2433931521
     locked: 0
