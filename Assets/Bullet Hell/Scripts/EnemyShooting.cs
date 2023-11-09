@@ -10,7 +10,7 @@ public class EnemyShooting : MonoBehaviour
     public float rotation = 0f;
     public float speed = 1f;
 
-    public Vector2 spawnPoint;
+    private Vector2 spawnPoint;
     private float timer = 0f;
 
     private void Start()
@@ -22,7 +22,7 @@ public class EnemyShooting : MonoBehaviour
     {
         if (timer > bulletLife)
         {
-            //Destroy(this.gameObject);
+            Destroy(this.gameObject);
         }
 
         timer += Time.deltaTime;

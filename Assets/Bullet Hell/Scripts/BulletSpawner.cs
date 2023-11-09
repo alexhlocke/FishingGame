@@ -9,9 +9,13 @@ public class BulletSpawner : MonoBehaviour
         Straight, Spin
     }
 
-    public GameObject bullet;
+    public GameObject bulletPrefab;
     public float bulletLife = 1f;
     public float speed = 1f;
+    public Transform firePoint;
+    public float bulletForce = 15f;
+    public float rotation = 1f;
+    
 
     [SerializeField] private SpawnerType spawnerType;
     [SerializeField] private float firingRate = 1f;
@@ -31,7 +35,8 @@ public class BulletSpawner : MonoBehaviour
         timer += Time.deltaTime;
         if (spawnerType == SpawnerType.Spin)
         {
-            transform.eulerAngles = new Vector3(0f, 0f, transform.eulerAngles.z + 1f);
+            transform.Rotate(Vector3.forward, rotation * Time.deltaTime);
+            //transform.eulerAngles = new Vector3(0f, 0f, transform.eulerAngles.z + 1f);
         }
 
         if (timer >= firingRate)
@@ -43,12 +48,15 @@ public class BulletSpawner : MonoBehaviour
 
     private void Fire()
     {
-        if (bullet)
+        if (bulletPrefab)
         {
-            spawnedBullet = Instantiate(bullet, transform.position, Quaternion.identity);
-            spawnedBullet.GetComponent<EnemyShooting>().speed = speed;
-            spawnedBullet.GetComponent<EnemyShooting>().bulletLife = bulletLife;
-            spawnedBullet.transform.rotation = transform.rotation;
+            // spawnedBullet = Instantiate(bullet, transform.position, Quaternion.identity);
+            // spawnedBullet.GetComponent<EnemyShooting>().speed = speed;
+            // spawnedBullet.GetComponent<EnemyShooting>().bulletLife = bulletLife;
+            // spawnedBullet.transform.rotation = transform.rotation;
+            GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+            rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
         }
     }
 }
