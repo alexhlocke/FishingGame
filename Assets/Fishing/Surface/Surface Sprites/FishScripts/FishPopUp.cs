@@ -1,17 +1,23 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class FishPopup : MonoBehaviour
 {
     public Sprite defaultFishSprite;  // Assign a default sprite in the inspector
-    public SpriteRenderer fishSpriteRenderer;  // Reference to the SpriteRenderer
+    public Image fishImage;  // Reference to the Image component
     public TextMeshProUGUI fishNameText;
     public TextMeshProUGUI sizeText;
     public TextMeshProUGUI valueText;
 
     void Awake()
     {
-        fishSpriteRenderer = transform.Find("fishsprite").GetComponent<SpriteRenderer>();
+        if (fishImage.sprite == null)
+        {
+            fishImage.sprite = defaultFishSprite;
+        }
+        SetFishData("Tester", 5, 5);
+        ShowPopup("Tester", 5, 5);
     }
 
     public void ShowPopup(string fishName, float size, int value)
@@ -25,9 +31,9 @@ public class FishPopup : MonoBehaviour
 
     void SetFishData(string fishName, float size, int value)
     {
-        if (fishSpriteRenderer != null)
+        if (fishImage != null)
         {
-            fishSpriteRenderer.sprite = defaultFishSprite;  // Change this to the actual sprite you want to use
+            fishImage.sprite = defaultFishSprite;  
         }
 
         fishNameText.text = "Name: " + fishName;
