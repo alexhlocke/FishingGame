@@ -17,6 +17,8 @@ public class CircleMinigame : MonoBehaviour
     public float SpinRateMin;
     public float SpinRateMax;
     public float StartTime = 10f;
+    [Header("Audio")]
+    public AudioClip spaceSound;
 
     private float spinRate = 1;
     private int step = 1;
@@ -40,6 +42,7 @@ public class CircleMinigame : MonoBehaviour
         if (Input.GetKeyDown("space")) {
             step += 1;
             resetSpinRate();
+            AudioManager.instance.PlaySound(spaceSound,100f);
         }
 
         //Spin circles
