@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CircleMinigame : MonoBehaviour
 {
@@ -10,19 +11,28 @@ public class CircleMinigame : MonoBehaviour
     public GameObject Circle2;
     public GameObject Circle3;
     public GameObject FishingPanel;
+    public GameObject Player;
+    public Slider TimeSlider;
     [Header("Important Values")]
     public float SpinRateMin;
     public float SpinRateMax;
+    public float StartTime = 10f;
 
     private float spinRate = 1;
     private int step = 1;
+    private float timer;
     private float c1angle = 0;
     private float c2angle = 0;
     private float c3angle = 0;
+    private OverworldPlayerController playerController;
+    private PlayerFishing playerFishing;
 
     
     void Start() {
+        playerFishing = Player.GetComponent<PlayerFishing>();
+        playerController = Player.GetComponent<OverworldPlayerController>();
 
+        timer = StartTime;
     }
 
     void Update() {
@@ -51,6 +61,12 @@ public class CircleMinigame : MonoBehaviour
         else if (step > 3) {
             EndMinigame();
         }
+
+        //Update timer
+        if (step > 0 && step < 4) {
+            timer -= Time.deltaTime;
+            TimeSlider.value = timer / StartTime;
+        }
     }
 
     private void RotateCircle(GameObject circle) {
@@ -64,6 +80,8 @@ public class CircleMinigame : MonoBehaviour
         step = 1;
         FishingPanel.SetActive(true);
 
+        timer = StartTime;
+
         resetSpinRate();
 
         //Hide circles
@@ -74,7 +92,17 @@ public class CircleMinigame : MonoBehaviour
 
     public void EndMinigame() {
         step = 0;
+        playerController.ReturnToMovement();
         FishingPanel.SetActive(false);
+    }
+    
+    public void SetSpinRate(float min, float max) {
+        SpinRateMin = min;
+        SpinRateMax = max;
+    }
+
+    public void SetStartTime(float startTime) {
+        StartTime = startTime;
     }
 
     private void resetSpinRate() {

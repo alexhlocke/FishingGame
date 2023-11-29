@@ -7678,8 +7678,11 @@ MonoBehaviour:
   Circle2: {fileID: 1372220035}
   Circle3: {fileID: 1549848915}
   FishingPanel: {fileID: 1674845542}
+  Player: {fileID: 2066082955}
+  TimeSlider: {fileID: 1627018741}
   SpinRateMin: 200
   SpinRateMax: 300
+  StartTime: 10
 --- !u!1 &1627018739
 GameObject:
   m_ObjectHideFlags: 0
@@ -8451,9 +8454,9 @@ GameObject:
   - component: {fileID: 2066082956}
   - component: {fileID: 2066082960}
   - component: {fileID: 2066082959}
+  - component: {fileID: 2066082963}
   - component: {fileID: 2066082962}
   - component: {fileID: 2066082961}
-  - component: {fileID: 2066082963}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -8562,6 +8565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+  CanMove: 1
 --- !u!114 &2066082960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8660,6 +8664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Fishing: 0
+  circleMinigame: {fileID: 1580923162}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

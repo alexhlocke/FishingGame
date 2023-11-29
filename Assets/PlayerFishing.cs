@@ -5,48 +5,31 @@ using UnityEngine;
 public class PlayerFishing : MonoBehaviour
 {
     public bool Fishing = false;
+    public CircleMinigame circleMinigame;
 
-    enum FishingState {
-        inactive,
-        casting,
-        swinging,
-        reeling,
-        caught
-    }
-    private FishingState fishingState = FishingState.inactive;
-
+    private OverworldPlayerController playerController;
 
 
     void Start() {
         Fishing = false;
-        fishingState = FishingState.inactive;
+        playerController = GetComponent<OverworldPlayerController>();
     }
 
     void Update() {
-        if (!Fishing) {
-            if (Input.GetKeyDown(KeyCode.X)) {
-                Fishing = true;
-                fishingState = FishingState.casting;
-            }
-        }
 
-        if (fishingState == FishingState.casting) {
-            if (Input.GetKeyDown(KeyCode.X)) {
-                //Charge cast
-            }
-        }
-
-        if (fishingState == FishingState.swinging) {
-            //wait
-            //when done set state to reeling
-        }
-
-        if (fishingState == FishingState.reeling) {
-            if (Input.GetKeyDown(KeyCode.X)) {
-                //reel in
-                //if reel back into player set state to inactive / Fishing=false
-                //if catch fish then this scene will fuck off
-            }
-        }
     }
+
+    public void StartFishing() {
+        //play a sound
+        //start coroutine
+        StartCoroutine(StartFishingPanel());
+    }
+
+    private IEnumerator StartFishingPanel() {
+        // Wait for 1.5 seconds
+        yield return new WaitForSeconds(1.5f); 
+        
+        // Call the StartMinigame function
+        circleMinigame.StartMinigame();
+    } 
 }
