@@ -30,6 +30,11 @@ public class FishCatchManager : MonoBehaviour
         fishCatches.Add(fish);
         SortFishBySize();
     }
+    //Get the array of fishes caught
+    public List<Fish> GetFishCatches()
+    {
+        return fishCatches;
+    }
 
     // Function to sort the array based on the size of the fish in descending order
     public void SortFishBySize()
