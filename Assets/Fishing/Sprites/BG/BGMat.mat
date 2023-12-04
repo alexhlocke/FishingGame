@@ -44,6 +44,6 @@ Material:
     m_Floats:
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
-    - _Wiggle: 0.003
+    - _Wiggle: 0.01
     m_Colors: []
   m_BuildTextureStacks: []
