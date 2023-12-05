@@ -8,6 +8,9 @@ public class OverworldPlayerController : MonoBehaviour
     [Header("Movement")]
     public float speed = 1f;
     public bool CanMove = true;
+
+    [Header("Sounds")]
+    public AudioClip Cast;
     
     private Animator animator;
     private SpriteRenderer spriteRenderer;
@@ -43,6 +46,7 @@ public class OverworldPlayerController : MonoBehaviour
 
             if (Input.GetKeyDown("space")) {
                 CanMove = false;
+                AudioManager.instance.PlaySound(Cast,100f);
                 animator.SetBool("Fishing", true);
                 playerFishing.StartFishing();
             }
