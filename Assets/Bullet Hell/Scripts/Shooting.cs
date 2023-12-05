@@ -12,6 +12,9 @@ public class Shooting : MonoBehaviour
     public GameObject bulletPrefab;
     public float bulletForce = 15f;
 
+    private bool canFire = true;
+    public float fireRate;
+
     void Start()
     {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
@@ -25,16 +28,29 @@ public class Shooting : MonoBehaviour
         float rotZ = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, rotZ);
         
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButton("Fire1"))
         {
-            Shoot();
+            if (canFire)
+            {
+                StartCoroutine(Shoot());
+            }
         }
     }
 
-    void Shoot()
+    IEnumerator Shoot()
     {
+        canFire = false;
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+        StartCoroutine(fireRateHandler());
+        yield return null;
+    }
+
+    IEnumerator fireRateHandler()
+    {
+        float timeToNextFire = 1 / fireRate;
+        yield return new WaitForSeconds(timeToNextFire);
+        canFire = true;
     }
 }
