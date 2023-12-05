@@ -36,7 +36,6 @@ public class BulletSpawner : MonoBehaviour
         if (spawnerType == SpawnerType.Spin)
         {
             transform.Rotate(Vector3.forward, rotation * Time.deltaTime);
-            //transform.eulerAngles = new Vector3(0f, 0f, transform.eulerAngles.z + 1f);
         }
 
         if (timer >= firingRate)
@@ -50,10 +49,6 @@ public class BulletSpawner : MonoBehaviour
     {
         if (bulletPrefab)
         {
-            // spawnedBullet = Instantiate(bullet, transform.position, Quaternion.identity);
-            // spawnedBullet.GetComponent<EnemyShooting>().speed = speed;
-            // spawnedBullet.GetComponent<EnemyShooting>().bulletLife = bulletLife;
-            // spawnedBullet.transform.rotation = transform.rotation;
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
             rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);

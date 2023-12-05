@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Searcher;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -17,6 +19,11 @@ public class PlayerMovement : MonoBehaviour
     private float dashingCooldown = 1f;
 
     [SerializeField] private TrailRenderer tr;
+
+    private void Start()
+    {
+        
+    }
 
     // Update is called once per frame
     void Update()
