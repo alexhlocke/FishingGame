@@ -11,16 +11,6 @@ public class FishPopup : MonoBehaviour
     public TextMeshProUGUI valueText;
     public Canvas fishCanvas;
 
-    void Awake()
-    {
-        if (fishImage.sprite == null)
-        {
-            fishImage.sprite = defaultFishSprite;
-        }
-        SetFishData("Tester", 5, 5, defaultFishSprite);
-        ShowPopup("Tester", 5, 5, defaultFishSprite);
-    }
-
     public void ShowPopup(string fishName, float size, int value, Sprite newfishImage)
     {
         Debug.Log("Showing PopUp");
