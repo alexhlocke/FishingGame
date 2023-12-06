@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.Common;
 using UnityEditor.Searcher;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,15 +15,15 @@ public class PlayerMovement : MonoBehaviour
 
     private bool canDash = true;
     private bool isDashing;
-    public float dashingPower = 10f;
+    public static float dashingPower = 10f;
     private float dashingTime = 0.2f;
     private float dashingCooldown = 1f;
 
     [SerializeField] private TrailRenderer tr;
 
-    private void Start()
+    public void setDashPower(int newDash)
     {
-        
+        dashingPower = newDash;
     }
 
     // Update is called once per frame

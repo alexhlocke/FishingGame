@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -5,39 +6,73 @@ using UnityEngine;
 
 public class PlayerStatsManager : MonoBehaviour
 {
+    public static event Action<int> OnWinsUpdated;
+    public static event Action<float> OnTopCatchUpdated;
+
     private HealthHUD health;
-    private int money = 0;
+    public static int playerMoney = 0;
     public TextMeshProUGUI moneyAmount;
-    private int losses = 0;
-    private int wins = 0;
+    private static int playerLosses = 0;
+    private static int playerWins = 0;
+    private static float topCatch = 0;
 
     void Start()
     {
         UpdateMoneyText();
     }
 
+    private void LateUpdate()
+    {
+        moneyAmount.text = playerMoney.ToString();
+    }
+
+    public void addCatch(float newSize)
+    {
+        if (newSize > topCatch)
+        {
+            topCatch = newSize;
+
+            // Notify subscribers about the updated topCatch
+            OnTopCatchUpdated?.Invoke(topCatch);
+        }
+    }
+
     // Method to increase money
     public void IncreaseMoney(int amount)
     {
-        money += amount;
+        playerMoney += amount;
         UpdateMoneyText();
     }
 
     // Method to decrease money
     public void DecreaseMoney(int amount)
     {
-        money -= amount;
+        playerMoney -= amount;
         // Ensure money doesn't go below zero
-        money = Mathf.Max(0, money);
+        playerMoney = Mathf.Max(0, playerMoney);
         UpdateMoneyText();
     }
 
     // Method to update the money text
-    private void UpdateMoneyText()
+    public void UpdateMoneyText()
     {
-        if (moneyAmount != null)
-        {
-            moneyAmount.text = money.ToString();
-        }
+        moneyAmount.text = playerMoney.ToString();
+    }
+
+    // Method to increase the number of wins and notify subscribers
+    public void IncreaseWins()
+    {
+        playerWins++;
+        Debug.Log("Wins: " + playerWins);
+
+        // Notify subscribers about the updated number of wins
+        OnWinsUpdated?.Invoke(playerWins);
+    }
+    // Method to increase the number of wins and notify subscribers
+    public void IncreaseLosses()
+    {
+        playerLosses++;
+        Debug.Log("Losses: " + playerLosses);
+        
     }
 }

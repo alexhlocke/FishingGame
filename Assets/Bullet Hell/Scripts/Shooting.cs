@@ -10,7 +10,7 @@ public class Shooting : MonoBehaviour
     public Transform firePoint;
     
     public GameObject bulletPrefab;
-    public float bulletForce = 15f;
+    public static float bulletForce = 15f;
 
     private bool canFire = true;
     public float fireRate;
@@ -20,6 +20,11 @@ public class Shooting : MonoBehaviour
     void Start()
     {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+    }
+
+    public void setBulletSpeed(int speed)
+    {
+        bulletForce = speed;
     }
 
     // Update is called once per frame

@@ -10,7 +10,7 @@ public class FishPopup : MonoBehaviour
     public TextMeshProUGUI sizeText;
     public TextMeshProUGUI valueText;
     public Canvas fishCanvas;
-
+    
     public void ShowPopup(string fishName, float size, int value, Sprite newfishImage)
     {
         Debug.Log("Showing PopUp");
@@ -32,7 +32,7 @@ public class FishPopup : MonoBehaviour
             fishImage.sprite = newfishImage;
         }
 
-        fishNameText.text = "Name: " + fishName;
+        fishNameText.text = fishName;
         sizeText.text = "Size: " + size.ToString("F2");
         valueText.text = "Value: $" + value.ToString();
     }

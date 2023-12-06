@@ -2,19 +2,27 @@ using UnityEngine;
 
 public class FishingResultManager : MonoBehaviour
 {
-    public HealthHUD healthHUD;
-    public PlayerStatsManager playerStatsManager;
-    public FightManager fightManager;
-    public FishManager fishM;
+    [SerializeField] public HealthHUD healthHUD;
+    [SerializeField] public PlayerStatsManager playerStatsManager;
+    [SerializeField] public FightManager fightManager;
+    [SerializeField] public FishManager fishM;
     
     void Start()
     {
+        Debug.Log("CHECKING STATES");
         // Make sure all required components are assigned
         if (healthHUD == null || playerStatsManager == null || fightManager == null)
         {
             Debug.LogError("Missing references in GameOutcomeHandler. Please assign all required components.");
         }
         Debug.Log("We're Starting");
+        
+        if (fishM == null)
+        {
+            Debug.LogError("FishM is not assigned in the Unity Editor.");
+            return;
+        }
+
         if (fightManager.GetFightState() == FightManager.FightState.Win)
         {
             Debug.Log("We've Won");
@@ -41,6 +49,7 @@ public class FishingResultManager : MonoBehaviour
 
         // Example: Increase player's money
         playerStatsManager.IncreaseMoney(15);
+        playerStatsManager.IncreaseWins();
         
         fishM.CollectFish();
         
@@ -53,10 +62,9 @@ public class FishingResultManager : MonoBehaviour
         // Add logic for handling a loss
         Debug.Log("Handling Loss!");
         
-        // Example: Update health HUD
-        healthHUD.ChangeHealth(-1); // Assuming 0 health for simplicity
+        playerStatsManager.IncreaseLosses();
+        healthHUD.ChangeHealth(-1);
 
-        // Example: Set the fight manager to a loss state
         fightManager.SetFightState(FightManager.FightState.Neutral);
     }
 }

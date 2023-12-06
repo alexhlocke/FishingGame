@@ -5400,7 +5400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 1404836465}
-  fightm: {fileID: 0}
+  fightm: {fileID: 325002093}
 --- !u!1 &791118151
 GameObject:
   m_ObjectHideFlags: 0

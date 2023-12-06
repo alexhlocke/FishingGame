@@ -257,6 +257,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2045453620}
     m_Modifications:
+    - target: {fileID: 341644200636359755, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
+      propertyPath: m_fontSize
+      value: 20.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 341644200636359755, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
+      propertyPath: m_margin.w
+      value: 0.27690697
+      objectReference: {fileID: 0}
+    - target: {fileID: 341644200636359755, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
+      propertyPath: m_margin.z
+      value: 0.000011451342
+      objectReference: {fileID: 0}
+    - target: {fileID: 341644200636359755, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 341644200636359755, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 408861967680499372, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -373,6 +393,30 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1540076865790329911, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540076865790329911, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.49999985
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540076865790329911, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 38.608
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540076865790329911, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 21.202
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540076865790329911, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -22.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1540076865790329911, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -31.356
+      objectReference: {fileID: 0}
     - target: {fileID: 1744298753303744186, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
       propertyPath: m_Name
       value: FishCatchTest
@@ -385,21 +429,77 @@ PrefabInstance:
       propertyPath: m_CullTransparentMesh
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3659180868559559601, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 83.542
+      objectReference: {fileID: 0}
+    - target: {fileID: 3659180868559559601, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 21.961
+      objectReference: {fileID: 0}
+    - target: {fileID: 3659180868559559601, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.086
+      objectReference: {fileID: 0}
+    - target: {fileID: 3659180868559559601, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -9.9802
+      objectReference: {fileID: 0}
+    - target: {fileID: 5741600411626581813, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
+      propertyPath: m_fontSize
+      value: 22.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 5741600411626581813, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5741600411626581813, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5765215078408573226, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5828050343101498646, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
+      propertyPath: m_text
+      value: Fish Name
+      objectReference: {fileID: 0}
+    - target: {fileID: 5828050343101498646, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
       propertyPath: m_fontSize
-      value: 12
+      value: 17.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5828050343101498646, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5828050343101498646, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
       propertyPath: m_fontSizeBase
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 5828050343101498646, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6796867288624009535, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8982958379247644719, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 38.608
+      objectReference: {fileID: 0}
+    - target: {fileID: 8982958379247644719, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 20.791
+      objectReference: {fileID: 0}
+    - target: {fileID: 8982958379247644719, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 21.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8982958379247644719, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -31.562
       objectReference: {fileID: 0}
     - target: {fileID: 9072094391776741340, guid: 06a29fa1cb861044fb1ce1d443cfff54, type: 3}
       propertyPath: m_PresetInfoIsWorld
@@ -599,7 +699,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Cost: 15 Gold and Five caught fish
+  m_text: 'Cost: 15 Gold and Catch Five Fish
 
     Increases Bullet Speed'
   m_isRightToLeft: 0
@@ -789,7 +889,7 @@ GameObject:
   - component: {fileID: 236652113}
   - component: {fileID: 236652114}
   m_Layer: 5
-  m_Name: Upgrade 3
+  m_Name: NoteinatBottle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -830,7 +930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -838,11 +938,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 0, b: 0, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 0, b: 0, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -863,7 +963,19 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 302136000}
+        m_TargetAssemblyTypeName: ButtonFunctions, Assembly-CSharp
+        m_MethodName: SetMaxHealth
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1 &242186002
 GameObject:
@@ -1163,6 +1275,8 @@ GameObject:
   - component: {fileID: 302135995}
   - component: {fileID: 302135994}
   - component: {fileID: 302135993}
+  - component: {fileID: 302135999}
+  - component: {fileID: 302136000}
   m_Layer: 5
   m_Name: Upgrade Menu
   m_TagString: Untagged
@@ -1238,7 +1352,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 302135992}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 2145565855}
@@ -1278,6 +1392,35 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &302135999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302135992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b505919b5e1ab449817afcad09f4d47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  catchButton: {fileID: 1083471929}
+  button3Fish: {fileID: 236652114}
+  button5Fish: {fileID: 1146807117}
+--- !u!114 &302136000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302135992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce42740cc540c444297d9f40ffc263a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStats: {fileID: 2045453626}
+  health: {fileID: 2045453622}
 --- !u!1 &305346112
 GameObject:
   m_ObjectHideFlags: 0
@@ -3208,7 +3351,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2135263156}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FishManager, Assembly-CSharp
         m_MethodName: CollectFish
         m_Mode: 1
@@ -3232,7 +3375,7 @@ GameObject:
   - component: {fileID: 736454048}
   - component: {fileID: 736454049}
   m_Layer: 5
-  m_Name: Upgrade 4
+  m_Name: Pristine Bait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3273,7 +3416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -3281,11 +3424,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 0, b: 0, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 0, b: 0, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -3306,7 +3449,19 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 302136000}
+        m_TargetAssemblyTypeName: ButtonFunctions, Assembly-CSharp
+        m_MethodName: SetPlayerDamage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1 &754874302
 GameObject:
@@ -3505,7 +3660,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Costs: 15 Gold and 3 Fish
+  m_text: 'Costs: 15 Gold and Catch 1 Fish
 
     Increases Health'
   m_isRightToLeft: 0
@@ -7337,7 +7492,7 @@ GameObject:
   - component: {fileID: 1083471928}
   - component: {fileID: 1083471929}
   m_Layer: 5
-  m_Name: Upgrade 1
+  m_Name: Golden Hook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7378,7 +7533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -7386,11 +7541,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 0, b: 0, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 0, b: 0, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -7404,14 +7559,26 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1816817878}
   toggleTransition: 0
   graphic: {fileID: 1816817878}
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 302136000}
+        m_TargetAssemblyTypeName: ButtonFunctions, Assembly-CSharp
+        m_MethodName: SetDashingPower
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1 &1085421881
 GameObject:
@@ -7762,7 +7929,7 @@ GameObject:
   - component: {fileID: 1146807116}
   - component: {fileID: 1146807117}
   m_Layer: 5
-  m_Name: Upgrade 2
+  m_Name: Harpoon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7803,7 +7970,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -7811,11 +7978,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 0, b: 0, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 0, b: 0, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -7829,14 +7996,26 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1337591154}
   toggleTransition: 1
   graphic: {fileID: 1337591154}
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 302136000}
+        m_TargetAssemblyTypeName: ButtonFunctions, Assembly-CSharp
+        m_MethodName: SetBulletForce
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!1 &1194263482
 GameObject:
@@ -10887,6 +11066,7 @@ MonoBehaviour:
   HealthSpriteFull: {fileID: 21300000, guid: 4ec451da59b34f444ab320a477ede622, type: 3}
   HealthSpriteDmg1: {fileID: 21300000, guid: 395d4eebb88369941848c54871f8ee2f, type: 3}
   HealthSpriteDmg2: {fileID: 21300000, guid: cbc21aae08879894ba3d0371e2a7ae88, type: 3}
+  HealthSpriteOverheal: {fileID: 21300000, guid: ec6b5083257faf7478f598895bb7bf9a, type: 3}
   DayHandler: {fileID: 2045453619}
 --- !u!114 &2045453623
 MonoBehaviour:
@@ -10979,7 +11159,7 @@ MonoBehaviour:
   healthHUD: {fileID: 2045453622}
   playerStatsManager: {fileID: 2045453626}
   fightManager: {fileID: 722982614}
-  fishM: {fileID: 2135263156}
+  fishM: {fileID: 2135263159}
 --- !u!114 &2045453628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11162,7 +11342,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2135263158}
   - component: {fileID: 2135263157}
-  - component: {fileID: 2135263156}
+  - component: {fileID: 2135263159}
   m_Layer: 0
   m_Name: FishManager
   m_TagString: Untagged
@@ -11170,7 +11350,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2135263156
+--- !u!114 &2135263157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135263155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37bf835cab00cc54fa4d498254429d7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fishCatches: []
+--- !u!4 &2135263158
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135263155}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.0471207, y: 3.9580371, z: 1.1882812}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2135263159
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11208,34 +11416,8 @@ MonoBehaviour:
     minSize: 4
     maxSize: 9
     baseValue: 3
---- !u!114 &2135263157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2135263155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37bf835cab00cc54fa4d498254429d7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fishCatches: []
---- !u!4 &2135263158
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2135263155}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0471207, y: 3.9580371, z: 1.1882812}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  fishDisplay: {fileID: 24921459}
+  playerStats: {fileID: 2045453626}
 --- !u!1 &2140772013
 GameObject:
   m_ObjectHideFlags: 0

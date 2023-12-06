@@ -1,7 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class DayManager : MonoBehaviour
 {
     public SceneTransitioner sceneTransitioner;
@@ -33,8 +33,6 @@ public class DayManager : MonoBehaviour
     {
         // Fade to black
         sceneTransitioner.FadeToBlack();
-        yield return new WaitForSeconds(sceneTransitioner.fadeDuration);
-
         // Switch to secondary camera for a few seconds
         sceneTransitioner.SwitchCamera();
         yield return new WaitForSeconds(2.0f); // Adjust the duration as needed
@@ -53,6 +51,7 @@ public class DayManager : MonoBehaviour
         {
             Debug.Log("All days have passed.");
             // Need to input logic for the lose state here, possibly transferring the player to the main menu if needed
+            SceneManager.LoadScene("MainMenu");
         }
         else
         {

@@ -9,8 +9,8 @@ public class FightManager : MonoBehaviour
         Loss
     }
 
-    private static FightManager instance;
-    private FightState currentFightState = FightState.Neutral;
+    public static FightManager instance;
+    public static FightState currentFightState = FightState.Neutral;
 
     void Awake()
     {
