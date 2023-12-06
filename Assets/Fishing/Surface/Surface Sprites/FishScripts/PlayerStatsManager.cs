@@ -8,6 +8,8 @@ public class PlayerStatsManager : MonoBehaviour
     private HealthHUD health;
     private int money = 0;
     public TextMeshProUGUI moneyAmount;
+    private int losses = 0;
+    private int wins = 0;
 
     void Start()
     {

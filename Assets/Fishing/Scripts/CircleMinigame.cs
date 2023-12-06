@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class CircleMinigame : MonoBehaviour
 {
 
@@ -63,7 +63,7 @@ public class CircleMinigame : MonoBehaviour
                     FailMinigame();
                 } else {
                     AudioManager.instance.PlaySound(LastSpaceSound,100f);
-                    //Go to fishing scene
+                    SceneManager.LoadScene("Bullet Hell");
                 }
             }   
             
