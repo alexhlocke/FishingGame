@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Bullet Hell/Bullet Hell.unity
     guid: 6f323a082db6dd84eb56e2fc0a70618b
   - enabled: 1
+<<<<<<< HEAD
+=======
+    path: Assets/Fishing/FishingScene.unity
+    guid: 273f9fa7578d2534297fa0bbca2fd74c
+  - enabled: 1
+>>>>>>> parent of dba8124 (Revert "Merge branch 'main' into bullet-hell")
     path: Assets/Fishing/FishingScene.unity
     guid: affb71a82cbc23f47b3431c3c4670432
   m_configObjects: {}

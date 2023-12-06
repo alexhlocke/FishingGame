@@ -21,6 +21,7 @@ public class HealthHUD : MonoBehaviour
     public void ChangeHealth(float newHealth)
     {
         // Ensure health doesn't go below 0 or exceed maxHealth
+        newHealth = currentHealth - newHealth;
         currentHealth = Mathf.Clamp(newHealth, 0f, maxHealth);
 
         UpdateHealthUI();
