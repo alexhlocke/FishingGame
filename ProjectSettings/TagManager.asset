@@ -53,9 +53,6 @@ TagManager:
   - name: Buildings
     uniqueID: 496889813
     locked: 0
-  - name: Player Shadow
-    uniqueID: 920442805
-    locked: 0
   - name: Player
     uniqueID: 3841884755
     locked: 0
