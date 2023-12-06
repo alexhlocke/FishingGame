@@ -9,13 +9,12 @@ EditorBuildSettings:
     path: Assets/UnderwaterFantasy/Scenes/demo.unity
     guid: 4c39057d64ab94044934cc9f140d08f9
   - enabled: 1
-    path: Assets/Bullet Hell/Bullet Hell.unity
-    guid: 6f323a082db6dd84eb56e2fc0a70618b
+    path: Assets/Scenes/MainMenu/MainMenu.unity
+    guid: ac0e47f0090e7394d863da049bb98e20
   - enabled: 1
     path: Assets/Fishing/FishingScene.unity
     guid: 273f9fa7578d2534297fa0bbca2fd74c
   - enabled: 1
-    path: Assets/Scenes/MainMenu/MainMenu.unity
-    guid: ac0e47f0090e7394d863da049bb98e20
+    path: Assets/Bullet Hell/Bullet Hell.unity
+    guid: 6f323a082db6dd84eb56e2fc0a70618b
   m_configObjects: {}
-  m_UseUCBPForAssetBundles: 0
