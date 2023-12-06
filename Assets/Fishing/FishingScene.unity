@@ -1238,7 +1238,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 302135992}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 2145565855}
@@ -3139,7 +3139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &734617135
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10809,6 +10809,7 @@ GameObject:
   - component: {fileID: 2045453619}
   - component: {fileID: 2045453626}
   - component: {fileID: 2045453627}
+  - component: {fileID: 2045453628}
   m_Layer: 5
   m_Name: Master
   m_TagString: Untagged
@@ -10979,6 +10980,19 @@ MonoBehaviour:
   playerStatsManager: {fileID: 2045453626}
   fightManager: {fileID: 722982614}
   fishM: {fileID: 2135263156}
+--- !u!114 &2045453628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045453618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fc19ddbd4d9f5f4d890e230277a37b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textToIncrease: {fileID: 1681965679}
 --- !u!1 &2050447300
 GameObject:
   m_ObjectHideFlags: 0

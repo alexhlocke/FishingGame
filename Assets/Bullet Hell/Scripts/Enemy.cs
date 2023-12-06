@@ -30,7 +30,7 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
             fightm.SetFightState(FightManager.FightState.Win);
             SceneManager.LoadScene("FishingScene");
         }
