@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FishGameLogo_0: -9199324953238029466
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

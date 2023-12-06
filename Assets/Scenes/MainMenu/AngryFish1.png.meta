@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AngryFish1_0: 3281587337100384772
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

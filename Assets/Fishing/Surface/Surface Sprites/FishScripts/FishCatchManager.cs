@@ -41,5 +41,5 @@ public class FishCatchManager : MonoBehaviour
     {
         fishCatches.Sort((fish1, fish2) => fish2.size.CompareTo(fish1.size));
     }
-
+    
 }
