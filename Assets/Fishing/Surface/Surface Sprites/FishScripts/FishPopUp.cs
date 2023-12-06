@@ -16,24 +16,28 @@ public class FishPopup : MonoBehaviour
         {
             fishImage.sprite = defaultFishSprite;
         }
-        SetFishData("Tester", 5, 5);
-        ShowPopup("Tester", 5, 5);
+        SetFishData("Tester", 5, 5, defaultFishSprite);
+        ShowPopup("Tester", 5, 5, defaultFishSprite);
     }
 
-    public void ShowPopup(string fishName, float size, int value)
+    public void ShowPopup(string fishName, float size, int value, Sprite newfishImage)
     {
-        SetFishData(fishName, size, value);
+        SetFishData(fishName, size, value, newfishImage);
 
         gameObject.SetActive(true);
 
         StartCoroutine(HideCanvasAfterDelay(3f)); // Adjust the delay as needed
     }
 
-    void SetFishData(string fishName, float size, int value)
+    void SetFishData(string fishName, float size, int value, Sprite newfishImage)
     {
-        if (fishImage != null)
+        if (newfishImage == null)
         {
             fishImage.sprite = defaultFishSprite;  
+        }
+        else
+        {
+            fishImage.sprite = newfishImage;
         }
 
         fishNameText.text = "Name: " + fishName;
