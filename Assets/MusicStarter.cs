@@ -9,6 +9,6 @@ public class MusicStarter : MonoBehaviour
 
     void Start()
     {
-        AudioManager.instance.PlaySound(Music, MusicVolume);
+        AudioManager.instance.PlaySoundLoop(Music, MusicVolume);
     }
 }
