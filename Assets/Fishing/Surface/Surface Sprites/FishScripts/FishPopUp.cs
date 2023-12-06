@@ -9,22 +9,14 @@ public class FishPopup : MonoBehaviour
     public TextMeshProUGUI fishNameText;
     public TextMeshProUGUI sizeText;
     public TextMeshProUGUI valueText;
-
-    void Awake()
-    {
-        if (fishImage.sprite == null)
-        {
-            fishImage.sprite = defaultFishSprite;
-        }
-        SetFishData("Tester", 5, 5, defaultFishSprite);
-        ShowPopup("Tester", 5, 5, defaultFishSprite);
-    }
+    public Canvas fishCanvas;
 
     public void ShowPopup(string fishName, float size, int value, Sprite newfishImage)
     {
+        Debug.Log("Showing PopUp");
         SetFishData(fishName, size, value, newfishImage);
 
-        gameObject.SetActive(true);
+        fishCanvas.enabled = true;
 
         StartCoroutine(HideCanvasAfterDelay(3f)); // Adjust the delay as needed
     }
@@ -49,20 +41,7 @@ public class FishPopup : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
 
-        CanvasGroup canvasGroup = GetComponent<CanvasGroup>();
-        if (canvasGroup != null)
-        {
-            float fadeDuration = 1f; // Fade duration
-            float startTime = Time.time;
+        fishCanvas.enabled = false;
 
-            while (Time.time < startTime + fadeDuration)
-            {
-                canvasGroup.alpha = Mathf.Lerp(1f, 0f, (Time.time - startTime) / fadeDuration);
-                yield return null;
-            }
-
-            // Deactivate the canvas after fading
-            gameObject.SetActive(false);
-        }
     }
 }
