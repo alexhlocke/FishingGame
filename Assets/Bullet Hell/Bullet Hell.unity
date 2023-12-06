@@ -492,6 +492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 7
   rb: {fileID: 244396482}
+  dashingPower: 15
   tr: {fileID: 244396485}
 --- !u!61 &244396484
 BoxCollider2D:
@@ -7766,6 +7767,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   rb: {fileID: 1729346066}
+  dashingPower: 10
   tr: {fileID: 0}
 --- !u!61 &1729346065
 BoxCollider2D:
