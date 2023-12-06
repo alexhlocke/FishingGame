@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         health = startHealth;
-        Time.timeScale = 1;
+        //Time.timeScale = 1;
     }
 
     // Update is called once per frame

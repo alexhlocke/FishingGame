@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
-    private float startHealth = 200;
+    private float startHealth = 150;
     private float health;
     public Image healthBar;
     public FightManager fightm;
@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         health = startHealth;
-        Time.timeScale = 1;
+        //Time.timeScale = 1;
     }
 
     // Update is called once per frame
