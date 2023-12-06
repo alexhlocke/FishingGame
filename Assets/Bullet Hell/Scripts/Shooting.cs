@@ -15,6 +15,8 @@ public class Shooting : MonoBehaviour
     private bool canFire = true;
     public float fireRate;
 
+    public AudioClip pewpew;
+
     void Start()
     {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
@@ -33,6 +35,7 @@ public class Shooting : MonoBehaviour
             if (canFire)
             {
                 StartCoroutine(Shoot());
+                AudioManager.instance.PlaySound(pewpew, 100);
             }
         }
     }

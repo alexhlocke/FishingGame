@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
     private float startHealth = 200;
     private float health;
     public Image healthBar;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,7 @@ public class Enemy : MonoBehaviour
         {
             Destroy(gameObject);
             Time.timeScale = 0;
+            SceneManager.LoadScene("FishingScene");
         }
     }
 }
