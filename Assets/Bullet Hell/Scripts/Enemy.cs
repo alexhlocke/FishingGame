@@ -30,7 +30,7 @@ public class Enemy : MonoBehaviour
         {
             Destroy(gameObject);
             Time.timeScale = 0;
-            SceneManager.LoadScene("FishingScene");
+            SceneManager.LoadScene(1);
         }
     }
 }
