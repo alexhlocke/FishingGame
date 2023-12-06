@@ -32,7 +32,7 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject);
             Time.timeScale = 0;
             fightm.SetFightState(FightManager.FightState.Win);
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("FishingScene");
         }
     }
 }
